@@ -1,0 +1,370 @@
+
+/* Style pour le header */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+  }
+
+ html {
+ font-size: 62%;
+ }
+
+  
+html,
+body {
+ height: 100%;
+
+ 
+}
+  
+body {
+ 
+  background: linear-gradient(45deg, #ffffff, #dadada);
+  font-weight: 100;
+  font-family:  'Cambria', sans-serif ;
+
+}
+  
+header{
+width: auto;
+background-color: #393a3b;
+position: fixed;
+color: white;
+padding: 20px;
+position: fixed;
+top:0;
+left:0;
+right:0;
+z-index:1000;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 65px;
+padding: 0 5%;
+
+}
+header .logo {
+  display: flex;
+
+}
+
+header .logo h1 {
+  font-size: 14px;
+  color: white;
+}
+header .logo img {
+  width: 150px;
+  height: 150px;
+}
+
+
+section{
+ margin-top: 50px;
+}
+
+  
+ 
+  /* Styles pour le menu */
+.menu{
+  display : flex;
+ align-items: center;
+
+}
+li{
+
+  list-style-type: none;
+}
+
+.menu li {
+
+margin: 0 15px;
+list-style-type: none;
+
+}
+.menu li a {
+ color: white;
+ font-size: 14px;
+
+}
+a{
+  text-decoration: 0;
+  list-style-type: none;
+}
+.btn-connexion {
+  
+ font-size: 14px;
+    color: #fff;
+    padding: 10px 25px;
+    background: gray;
+    border-radius: 60px;
+    list-style-type: none;
+}
+
+  
+  /* Styles pour les menus déroulants */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background:transparent;
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  .dropdown-menu li {
+    margin: 0;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  
+#home{
+/*obligé de laisser l'images  aa en derhors du reperrtoires sinon  ça ne marche pas avec le images/aa.jpg*/
+ background: linear-gradient( rgba(0,0,0,0.1), #333),url(../aa.jpg); 
+ background-position: center;
+ background-size:cover;
+ height: calc(100vh);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ position: relative;
+
+}
+  
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(143, 137, 137, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(0, 1, 7, 0.37);
+}
+
+label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px #e2d1c3;
+}
+
+button[type="submit"] {
+  background-color: #e2d1c3;
+  color: #393a3b;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #393a3b;
+  color: #e2d1c3;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white ;
+  text-align: center;
+}
+
+h2{
+font-size: 30px;
+  margin-bottom: 20px;
+  color: white ;
+  text-align: center;
+}
+
+/* Styliser les étiquettes des champs de saisie */
+label {
+  font-size: 18px;
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+/* Styliser les champs de saisie */
+input[type="text"],
+input[type="email"],
+select {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styliser le bouton Insérer */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Styliser le bouton Effacer */
+input[type="reset"] {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+p{
+color:rgba(143, 137, 137, 0.15);
+}
+
+form {
+  margin: 20px;
+}
+
+label {
+  margin-left: 10px;
+}
+
+select, button {
+  margin-top: 10px;
+}
+
+select option {
+  background-color: white;
+  color: black;
+}
+
+table {
+  font-size: 18px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+th {
+  background-color:#393a3b;
+  color: #fff;
+}
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+caption {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+/* Styles pour la liste déroulante */
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+/* Styles pour le bouton */
+button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Styles pour le bouton au survol */
+button:hover {
+  background-color: #ff6659;
+}
+
+/* Styles pour le bouton au clic */
+button:active {
+  background-color: #d63027;
+}
+
+
+
+
+
+
+footer{
+  background: #333;
+margin-left: auto;
+margin-right: auto;
+    bottom: 0;
+  }
+
+  footer p{
+    text-align: center;
+    }
+
+
+
+
